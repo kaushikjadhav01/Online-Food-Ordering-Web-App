@@ -1,0 +1,156 @@
+/*
+Zerotheme.com | Free Html5 Responsive Templates
+Zerogrid - A Single Grid System for Responsive Design
+Author: Kimmy
+Version : 3.0
+Author URI: http://www.zerotheme.com/
+*/
+/* -------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------Item-Effect---------------------------------- */
+/* ---------------------------------------------------------------------------- */	
+.item-container {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width:100%;
+}
+.item-container img {
+	display: block;
+	width: 100%;
+	height: auto;
+	-webkit-transition: all .5s ease; /* Safari and Chrome */
+    -moz-transition: all .5s ease; /* Firefox */
+    -ms-transition: all .5s ease; /* IE 9 */
+    -o-transition: all .5s ease; /* Opera */
+    transition: all .5s ease;
+	 overflow:hidden;
+}
+.item-container .item-caption {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	background: none;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all .5s ease; /* Safari and Chrome */
+    -moz-transition: all .5s ease; /* Firefox */
+    -ms-transition: all .5s ease; /* IE 9 */
+    -o-transition: all .5s ease; /* Opera */
+    transition: all .5s ease;
+}
+.item-caption-inner {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.item-caption-inner1 {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+.item-container .item-caption h3, .item-container .item-caption span{
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	color: #444;
+	display: none;
+}
+.item-container .item-caption h3{
+	font-size: 23px;
+	letter-spacing: 2px;
+	margin-bottom : 12px;
+}
+.item-container .item-caption span{
+	font-style: italic;
+	font-size: 12px;
+}
+
+.item-container:hover .item-caption {
+	background: rgba(255, 255, 255, 0.75);
+}
+.item-container:hover .item-caption h3, .item-container:hover .item-caption span{
+	display: block;
+}
+
+
+
+
+/* ------------------Grid System--------------- */ 
+.zerogrid{ width:100%; position: relative;}
+.zerogrid:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.zerogrid .f-right{float: right!important;}
+.zerogrid .f-left{float: left!important;}
+
+.zerogrid .row{}
+.zerogrid .row:before,.row:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+.zerogrid .row:after{clear: both; }
+.zerogrid .row{zoom: 1;}
+
+/*.zerogrid .wrap-col{margin:10px;}*/
+
+.zerogrid .col-1-2, .zerogrid .col-1-3, .zerogrid .col-2-3, .zerogrid .col-1-4, .zerogrid .col-2-4, .zerogrid .col-3-4, .zerogrid .col-1-5, .zerogrid .col-2-5, .zerogrid .col-3-5, .zerogrid .col-4-5, .zerogrid .col-1-6, .zerogrid .col-2-6, .zerogrid .col-3-6, .zerogrid .col-4-6, .zerogrid .col-5-6{float:left; /*display: inline-block;*/}
+
+.zerogrid .col-full{width:100%;}
+
+.zerogrid .col-1-2,.zerogrid .col-1-2-fixed{width:50%;}
+.zerogrid .offset-1-2{margin-left: 50%;}
+
+.zerogrid .col-1-3,.zerogrid .col-1-3-fixed{width:33.33%;}
+.zerogrid .col-2-3,.zerogrid .col-2-3-fixed{width:66.66%;}
+.zerogrid .offset-1-3{margin-left: 33.33%;}
+.zerogrid .offset-2-3{margin-left: 66.66%;}
+
+.zerogrid .col-1-4,.zerogrid .col-1-4-fixed{width:25%;}
+.zerogrid .col-2-4,.zerogrid .col-2-4-fixed{width:50%;}
+.zerogrid .col-3-4,.zerogrid .col-3-4-fixed{width:75%;}
+.zerogrid .offset-1-4{margin-left: 25%;}
+.zerogrid .offset-2-4{margin-left: 50%;}
+.zerogrid .offset-3-4{margin-left: 75%;}
+
+.zerogrid .col-1-5,.zerogrid .col-1-5-fixed{width:20%;}
+.zerogrid .col-2-5,.zerogrid .col-2-5-fixed{width:40%;}
+.zerogrid .col-3-5,.zerogrid .col-3-5-fixed{width:60%;}
+.zerogrid .col-4-5,.zerogrid .col-4-5-fixed{width:80%;}
+.zerogrid .offset-1-5{margin-left: 20%;}
+.zerogrid .offset-2-5{margin-left: 40%;}
+.zerogrid .offset-3-5{margin-left: 60%;}
+.zerogrid .offset-4-5{margin-left: 80%;}
+
+.zerogrid .col-1-6,.zerogrid .col-1-6-fixed{width:16.66%;}
+.zerogrid .col-2-6,.zerogrid .col-2-6-fixed{width:33.33%;}
+.zerogrid .col-3-6,.zerogrid .col-3-6-fixed{width:50%;}
+.zerogrid .col-4-6,.zerogrid .col-4-6-fixed{width:66.66%;}
+.zerogrid .col-5-6,.zerogrid .col-5-6-fixed{width:83.33%;}
+.zerogrid .offset-1-6{margin-left: 16.66%;}
+.zerogrid .offset-2-6{margin-left: 33.33%;}
+.zerogrid .offset-3-6{margin-left: 50%;}
+.zerogrid .offset-4-6{margin-left: 66.66%;}
+.zerogrid .offset-5-6{margin-left: 83.33%;}
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+	.zerogrid{/*width:960px;*/}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	/*.zerogrid{width:768px;}*/
+}
+
+@media only screen and (max-width: 767px) {
+	.zerogrid, .zerogrid .col-1-2, .zerogrid .col-1-3, .zerogrid .col-2-3, .zerogrid .col-1-4, .zerogrid .col-2-4, .zerogrid .col-3-4, .zerogrid .col-1-5, .zerogrid .col-2-5, .zerogrid .col-3-5, .zerogrid .col-4-5, .zerogrid .col-1-6, .zerogrid .col-2-6, .zerogrid .col-3-6, .zerogrid .col-4-6, .zerogrid .col-5-6{width:100%;}
+	
+	.zerogrid .offset-1-2, .zerogrid .offset-1-3, .zerogrid .offset-2-3, .zerogrid .offset-1-4, .zerogrid .offset-2-4, .zerogrid .offset-3-4, .zerogrid .offset-1-5, .zerogrid .offset-2-5, .zerogrid .offset-3-5, .zerogrid .offset-4-5, .zerogrid .offset-1-6, .zerogrid .offset-2-6, .zerogrid .offset-3-6, .zerogrid .offset-4-6, .zerogrid .offset-5-6{margin-left:0;}
+}

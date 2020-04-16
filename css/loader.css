@@ -1,0 +1,310 @@
+.cssload-container{
+	display: block;
+	margin:49px auto;
+	width:97px;
+}
+
+.cssload-container *, .cssload-container *:before, .cssload-container *:after {
+	box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+}
+
+.cssload-circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	z-index: 1;
+	transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+	transition: all 230ms ease;
+		-o-transition: all 230ms ease;
+		-ms-transition: all 230ms ease;
+		-webkit-transition: all 230ms ease;
+		-moz-transition: all 230ms ease;
+}
+.cssload-circle:nth-child(1) {
+	z-index: 2;
+	background: rgb(71,71,71);
+	animation-name: cssload-explode;
+		-o-animation-name: cssload-explode;
+		-ms-animation-name: cssload-explode;
+		-webkit-animation-name: cssload-explode;
+		-moz-animation-name: cssload-explode;
+	animation-duration: 1.15s;
+		-o-animation-duration: 1.15s;
+		-ms-animation-duration: 1.15s;
+		-webkit-animation-duration: 1.15s;
+		-moz-animation-duration: 1.15s;
+	animation-timing-function: ease;
+		-o-animation-timing-function: ease;
+		-ms-animation-timing-function: ease;
+		-webkit-animation-timing-function: ease;
+		-moz-animation-timing-function: ease;
+	animation-delay: 0;
+		-o-animation-delay: 0;
+		-ms-animation-delay: 0;
+		-webkit-animation-delay: 0;
+		-moz-animation-delay: 0;
+	animation-iteration-count: infinite;
+		-o-animation-iteration-count: infinite;
+		-ms-animation-iteration-count: infinite;
+		-webkit-animation-iteration-count: infinite;
+		-moz-animation-iteration-count: infinite;
+}
+.cssload-circle:nth-child(2) {
+	background: rgb(246,80,29);
+	animation-name: cssload-explode;
+		-o-animation-name: cssload-explode;
+		-ms-animation-name: cssload-explode;
+		-webkit-animation-name: cssload-explode;
+		-moz-animation-name: cssload-explode;
+	animation-duration: 1.15s;
+		-o-animation-duration: 1.15s;
+		-ms-animation-duration: 1.15s;
+		-webkit-animation-duration: 1.15s;
+		-moz-animation-duration: 1.15s;
+	animation-timing-function: ease;
+		-o-animation-timing-function: ease;
+		-ms-animation-timing-function: ease;
+		-webkit-animation-timing-function: ease;
+		-moz-animation-timing-function: ease;
+	animation-delay: 0.58s;
+		-o-animation-delay: 0.58s;
+		-ms-animation-delay: 0.58s;
+		-webkit-animation-delay: 0.58s;
+		-moz-animation-delay: 0.58s;
+	animation-iteration-count: infinite;
+		-o-animation-iteration-count: infinite;
+		-ms-animation-iteration-count: infinite;
+		-webkit-animation-iteration-count: infinite;
+		-moz-animation-iteration-count: infinite;
+}
+
+
+
+@keyframes cssload-explode {
+	0% {
+		width: 0;
+		height: 0;
+		z-index: 1;
+	}
+	50% {
+		width: 10em;
+		height: 10em;
+		z-index: 1;
+	}
+	100% {
+		display: none;
+	}
+}
+
+@-o-keyframes cssload-explode {
+	0% {
+		width: 0;
+		height: 0;
+		z-index: 1;
+	}
+	50% {
+		width: 10em;
+		height: 10em;
+		z-index: 1;
+	}
+	100% {
+		display: none;
+	}
+}
+
+@-ms-keyframes cssload-explode {
+	0% {
+		width: 0;
+		height: 0;
+		z-index: 1;
+	}
+	50% {
+		width: 10em;
+		height: 10em;
+		z-index: 1;
+	}
+	100% {
+		display: none;
+	}
+}
+
+@-webkit-keyframes cssload-explode {
+	0% {
+		width: 0;
+		height: 0;
+		z-index: 1;
+	}
+	50% {
+		width: 10em;
+		height: 10em;
+		z-index: 1;
+	}
+	100% {
+		display: none;
+	}
+}
+
+@-moz-keyframes cssload-explode {
+	0% {
+		width: 0;
+		height: 0;
+		z-index: 1;
+	}
+	50% {
+		width: 10em;
+		height: 10em;
+		z-index: 1;
+	}
+	100% {
+		display: none;
+	}
+}
+
+
+
+.loader__figure {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.loader {
+	position:fixed;
+	height:100%;
+	width:100%;
+	background:#fff;
+	z-index:1100;
+}
+
+.loader__figure {
+  height: 0;
+  width: 0;
+  box-sizing: border-box;
+  border: 0 solid #ff3332;
+  border-radius: 50%;
+  -webkit-animation: loader-figure 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-animation: loader-figure 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: loader-figure 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.loader__label{
+  position: absolute;
+  top: 50%;
+   margin: 40px auto auto -70px;
+  left: 50%;
+  right: 50%;
+  width:140px;
+  color: #0798bc;
+  -webkit-animation: loader-label 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  -moz-animation: loader-label 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: loader-label 1.15s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.loader__label > img{
+	width:100%;
+}	
+
+@-webkit-keyframes loader-figure {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  30% {
+    height: 2em;
+    width: 2em;
+    border-width: 1em;
+    opacity: 1;
+  }
+  100% {
+    height: 2em;
+    width: 2em;
+    border-width: 0;
+    opacity: 0;
+  }
+}
+@-moz-keyframes loader-figure {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  30% {
+    height: 2em;
+    width: 2em;
+    border-width: 1em;
+    opacity: 1;
+  }
+  100% {
+    height: 2em;
+    width: 2em;
+    border-width: 0;
+    opacity: 0;
+  }
+}
+@keyframes loader-figure {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  30% {
+    height: 2em;
+    width: 2em;
+    border-width: 1em;
+    opacity: 1;
+  }
+  100% {
+    height: 2em;
+    width: 2em;
+    border-width: 0;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes loader-label {
+  0% {
+    opacity: 0.35;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.35;
+  }
+}
+@-moz-keyframes loader-label {
+  0% {
+    opacity: 0.35;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.35;
+  }
+}
+@keyframes loader-label {
+  0% {
+    opacity: 0.35;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.35;
+  }
+}
+
+
