@@ -8,7 +8,8 @@ Login: admin
 Password: admin
 
 # Screenshots
-Find how the project looks in screenshots folder Or <a href="https://github.com/kaushikjadhav03/Online-Food-Ordering-Web-App/tree/master/screenshots">click here</a>
+<>
+Find how the project looks in screenshots folder Or <a href="https://github.com/kaushikjadhav01/Online-Food-Ordering-Web-App/tree/master/screenshots">click here</a>
 
 # Technologies Used
 <ul>
