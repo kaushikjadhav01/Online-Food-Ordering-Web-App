@@ -13,10 +13,10 @@ if($_SESSION['customer_sid']==session_id())
 		while($row1 = mysqli_fetch_array($sql1)){
 			$card = $row1['number'];
 			$cvv = $row1['cvv'];
-			if($card == $_POST['cc_number'] && $cvv==$_POST['cvv_number'])
+			// if($card == $_POST['cc_number'] && $cvv==$_POST['cvv_number'])
 			$continue=1;
-			else
-				header("location:index.php");
+			// else
+			// 	header("location:index.php");
 		}
 		}
 		else
