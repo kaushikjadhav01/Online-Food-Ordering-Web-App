@@ -33,7 +33,7 @@ CREATE TABLE `items` (
   `name` varchar(20) NOT NULL,
   `price` int(11) NOT NULL,
   `deleted` tinyint(4) NOT NULL DEFAULT '0',
-  `image` blob NOT NULL
+  `image` LONGBLOB NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -187,8 +187,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `role`, `name`, `username`, `password`, `email`, `address`, `contact`, `verified`, `deleted`) VALUES
-(1, 'Administrator', 'Admin 1', 'admin', 'admin', '', 'Address 1', 9898000000, 1, 0),
-(2, 'Customer', 'Customer 1', 'user1', 'pass1', 'mail2@example.com', 'Address 2', 9898000001, 1, 0),
+(1, 'Administrator', 'Admin 1', 'admin', 'Demopass@123', '', 'Address 1', 9898000000, 1, 0),
+(2, 'Customer', 'Customer 1', 'user1', 'Demopass@123', 'mail2@example.com', 'Address 2', 9898000001, 1, 0),
 (3, 'Customer', 'Customer 2', 'user2', 'pass2', 'mail3@example.com', 'Address 3', 9898000002, 1, 0),
 (4, 'Customer', 'Customer 3', 'user3', 'pass3', '', '', 9898000003, 0, 0),
 (5, 'Customer', 'Customer 4', 'user4', 'pass4', '', '', 9898000004, 0, 1),
